@@ -1,10 +1,10 @@
 graph = {}
-graph['a'] = {'b':5, 'c':2}
+graph['a'] = {'b':5, 'c':2} # - start
 graph['b'] = {'d':4, 'e':2}
 graph['c'] = {'b':8, 'e':7}
 graph['d'] = {'e':6, 'f':3}
 graph['e'] = {'f':1}
-graph['f'] = {}
+graph['f'] = {} # - end
 
 costs = {'a':0, 'b':float('inf'), 'c':float('inf'), 'd':float('inf'), 'e':float('inf'), 'f':float('inf')}
 parents = {'a':None, 'b':None, 'c':None, 'd':None, 'e':None, 'f':None}
