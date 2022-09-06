@@ -1,9 +1,9 @@
 graph = {}
-graph['a'] = {'b': 5, 'c': 2}
-graph['b'] = {'d': 4, 'e': 2}
-graph['c'] = {'b': 8, 'e': 7}
-graph['d'] = {'e': 6, 'f': 3}
-graph['e'] = {'f': 1}
+graph['a'] = {'b':5, 'c':2}
+graph['b'] = {'d':4, 'e':2}
+graph['c'] = {'b':8, 'e':7}
+graph['d'] = {'e':6, 'f':3}
+graph['e'] = {'f':1}
 graph['f'] = {}
 
 costs = {'a':0, 'b':100, 'c':100, 'd':100, 'e':100, 'f':100}
