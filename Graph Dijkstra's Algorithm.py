@@ -6,13 +6,13 @@ graph['d'] = {'e':6, 'f':3}
 graph['e'] = {'f':1}
 graph['f'] = {}
 
-costs = {'a':0, 'b':100, 'c':100, 'd':100, 'e':100, 'f':100}
+costs = {'a':0, 'b':float('inf'), 'c':float('inf'), 'd':float('inf'), 'e':float('inf'), 'f':float('inf')}
 parents = {'a':None, 'b':None, 'c':None, 'd':None, 'e':None, 'f':None}
 processed = set()
 
 
 def find_smallest_node():
-    lowest_cost = 100
+    lowest_cost = float('inf')
     lowest_node = None
     for node in costs:
         if costs[node] < lowest_cost and node not in processed:
